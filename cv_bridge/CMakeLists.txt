@@ -4,7 +4,7 @@ project(cv_bridge)
 find_package(catkin REQUIRED COMPONENTS rosconsole sensor_msgs)
 
 if(NOT ANDROID)
-  find_package(PythonLibs)
+  find_package(PythonLibs 3.7 REQUIRED)
 
   if(PYTHONLIBS_VERSION_STRING VERSION_LESS "3.8")
     # Debian Buster
